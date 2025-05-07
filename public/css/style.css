@@ -1,0 +1,446 @@
+﻿/* Horizontal platziertes Menü */
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline-block;
+        
+        
+    }
+
+        nav ul li:hover {
+            background: #4b545f;
+        }
+
+            nav ul li:hover a {
+                color: #fff;
+            }
+
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 30px 40px;
+        }
+
+    nav ul ul {
+        display: none;
+        position: absolute;
+        background: #5f6975;
+        padding: 0;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+    nav ul ul li {
+        float: none;
+        width: 100%;
+        position: relative;
+    }
+
+        nav ul ul li a {
+            padding: 10px 20px;
+            color: #fff;
+            width: 100%;
+            display: block;
+        }
+
+            nav ul ul li a:hover {
+                background: #4b545f;
+                
+            }
+
+/* Angebot */
+#slider{
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 100%;
+    margin: auto;
+}
+
+.slide-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.slide-img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*.img-1 {
+    background-image: url("massage.jpg");
+}*/
+
+.img-2 {
+    background-image: url("../images/sauna.jpg");
+}
+
+.img-3 {
+    background-image: url("../images/yoga.jpg");
+}
+
+.img-4 {
+    background-image: url("../images/fitness.jpg");
+}
+
+.img-5 {
+    background-image: url("../images/wandern.jpg");
+}
+
+.img-6 {
+    background-image: url("../images/massage.jpg");
+}
+
+
+@media(max-width:1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+/* Zimmer */
+.room-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    width: 100%;
+    height: 275px;
+
+}
+
+.room-container:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+    .room-container .book-now {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    
+.room-container a {
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.room-container:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.room-image {
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+
+.room-details {
+    flex: 1;
+    text-align:center;
+}
+
+.room-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.room-description {
+    margin-bottom: 10px;
+}
+
+.room-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-img {
+    width: 100%;
+    height: 275px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .room-img:hover {
+        box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    }
+
+    .room-img a {
+        opacity: 0;
+        text-decoration: none;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .room-img:hover a {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+/* Header */
+.header-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    /*background-image: url("jagdhof-roehrnbach.jpg");*/
+    /*background-size: cover;
+    background-position: center;*/
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+   height: 100%;
+}
+
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+    
+/* Kundenrezensionen */
+.testimonial-section {
+    background-color: #f8f8f8;
+    padding: 50px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-item {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+    .testimonial-item p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+.testimonial-author {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*Homepage content*/
+.feature-item{
+    text-align: center;
+    position: center;
+
+    
+}
+
+.feature-image{
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.hero-text {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Allgemeine Styles */
+header {
+    position: relative;
+
+}
+
+body {
+    background: rgba(0, 128, 0, 0.3)
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background:#000000;
+    opacity: 0.8;
+    bottom:0px;
+    height: 80px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Buchungsformular */
+#buchung input[type="text"],
+#buchung input[type="email"],
+#buchung input[type="tel"],
+#buchung input[type="date"],
+#buchung select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+#buchung input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    #buchung input[type="submit"]:hover {
+        background-color: #e67e22;
+    }
